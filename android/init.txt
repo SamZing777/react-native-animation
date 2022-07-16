@@ -1,1 +1,44 @@
     "@react-navigation/material-bottom-tabs": "^6.2.1",
+
+                /* <Animated.View style={{padding: 100}}>
+                <TouchableOpacity onPress={}>
+                    <ArrowUpIcon size={40} color="gray" />
+                </TouchableOpacity>
+            </Animated.View> */
+
+            const translation = useRef(
+        new Animated.Value(0)
+    ).current;
+        //  useEffect(() => {
+    //          Animated.timing(translation, {
+    //              toValue: value,
+    //              duration: 1000,
+    //              easing: Easing.back(),
+    //              useNativeDriver: true
+    //          }).start();
+    //      }, []);
+
+    // const interpolated = translation.interpolate({
+    //     inputRange: [0, 1],
+    //     outputRange: ["0deg", "45"]
+    // })
+
+
+                    // useEffect(() => {
+        //     Animated.timing(translation, {
+        //         toValue: 100,
+        //         useNativeDriver: true
+        //     }).start();
+        // }, []);
+
+        {  value == 200 ?
+                <ArrowUpIcon size={20} color="gray" /> :
+                <Text></Text>
+             }  
+
+        if(value === 0){
+                setValue(200);
+            }
+            else{
+                setValue(0);
+            }
