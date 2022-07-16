@@ -1,0 +1,1 @@
+    "@react-navigation/material-bottom-tabs": "^6.2.1",
